@@ -204,7 +204,7 @@ log("Total Episodes: " + str(len(myEpisodes)))
 # If no episodes, display notification and quit
 if len(myEpisodes) == 0:
 	log("--------- No episodes")
-	xbmcgui.Dialog().ok(name, addon.getLocalizedString(32008), addon.getLocalizedString(32009))
+	xbmcgui.Dialog().ok(name, addon.getLocalizedString(32008))
 	xbmc.executebuiltin('Addon.OpenSettings(%s)' % addonid)
 	backWindow.close()
 	log("Stopping")
